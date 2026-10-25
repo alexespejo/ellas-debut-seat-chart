@@ -248,7 +248,7 @@ export const guests: Guest[] = [
  {
   firstName: "Keilia",
   lastName: "De Boer",
-  table: 6,
+  table: 12,
  },
  {
   firstName: "Anna",
@@ -398,7 +398,7 @@ export const guests: Guest[] = [
  {
   firstName: "Angeli",
   lastName: "Gonzales",
-  table: 12,
+  table: 10,
  },
  {
   firstName: "Priscilla",
