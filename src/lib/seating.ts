@@ -7,27 +7,27 @@ export type Guest = {
 export const guests: Guest[] = [
   {
     "firstName": "Homer",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
     "firstName": "Maricar",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
     "firstName": "Christian",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
     "firstName": "Erin",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
     "firstName": "Eliana",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
@@ -37,7 +37,7 @@ export const guests: Guest[] = [
   },
   {
     "firstName": "Lance",
-    "lastName": "",
+    "lastName": "Maniago",
     "table": 1
   },
   {
@@ -77,12 +77,12 @@ export const guests: Guest[] = [
   },
   {
     "firstName": "Carla",
-    "lastName": "",
+    "lastName": "De Guzman",
     "table": 2
   },
   {
     "firstName": "Arvin",
-    "lastName": "",
+    "lastName": "De Guzman",
     "table": 2
   },
   {
@@ -192,17 +192,17 @@ export const guests: Guest[] = [
   },
   {
     "firstName": "Kyle",
-    "lastName": "M",
+    "lastName": "Maniago",
     "table": 5
   },
   {
     "firstName": "Roland",
-    "lastName": "M",
+    "lastName": "Maniago",
     "table": 5
   },
   {
     "firstName": "Jeanette",
-    "lastName": "M",
+    "lastName": "Maniago",
     "table": 5
   },
   {

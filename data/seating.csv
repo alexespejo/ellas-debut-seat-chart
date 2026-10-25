@@ -1,11 +1,11 @@
 First name,Last name,Table number
-Homer,,Table 1
-Maricar,,Table 1
-Christian,,Table 1
-Erin,,Table 1
-Eliana,,Table 1
+Homer,Maniago,Table 1
+Maricar,Maniago,Table 1
+Christian,Maniago,Table 1
+Erin,Maniago,Table 1
+Eliana,Maniago,Table 1
 Valerie,,Table 1
-Lance,,Table 1
+Lance,Maniago,Table 1
 Michael,Vera,Table 1
 Angelica,Marquez,Table 2
 Fito,Marquez,Table 2
@@ -13,8 +13,8 @@ Lilian,Marquez,Table 2
 Ava,Lopez,Table 2
 Isabella,De Guzman,Table 2
 Gavin,De Guzman,Table 2
-Carla,,Table 2
-Arvin,,Table 2
+Carla,De Guzman,Table 2
+Arvin,De Guzman,Table 2
 Alex,Espejo,Table 3
 Ana Marie,Buco,Table 3
 Evita,Alcanica,Table 3
@@ -36,9 +36,9 @@ Aezel,Dimalanta,Table 5
 Amancio,Maniago,Table 5
 Marietta,Maniago,Table 5
 Calvin,Maniago,Table 5
-Kyle,M,Table 5
-Roland,M,Table 5
-Jeanette,M,Table 5
+Kyle,Maniago,Table 5
+Roland,Maniago,Table 5
+Jeanette,Maniago,Table 5
 Tyella,Maniago,Table 6
 Merced,Photography,Table 6
 Merced,,Table 6
