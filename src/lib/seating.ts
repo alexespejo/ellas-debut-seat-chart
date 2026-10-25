@@ -398,7 +398,7 @@ export const guests: Guest[] = [
  {
   firstName: "Angeli",
   lastName: "Gonzales",
-  table: 10,
+  table: 12,
  },
  {
   firstName: "Priscilla",
