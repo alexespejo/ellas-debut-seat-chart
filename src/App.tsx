@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { guests, tableCount } from "./lib/seating";
 import { normalizeName, searchGuests } from "./lib/search";
 import "./App.css";
@@ -25,8 +25,13 @@ function SearchIcon() {
 function App() {
   const [query, setQuery] = useState("");
   const results = useMemo(() => searchGuests(query), [query]);
+  const listRef = useRef<HTMLUListElement>(null);
   const trimmedQuery = query.trim();
   const hasSearch = normalizeName(query).length > 0;
+
+  useEffect(() => {
+    if (listRef.current) listRef.current.scrollTop = 0;
+  }, [query]);
 
   return (
     <main className="page">
@@ -105,6 +110,7 @@ function App() {
                     : `${results.length} guests match`}
                 </p>
                 <ul
+                  ref={listRef}
                   className="seats"
                   tabIndex={0}
                   aria-label="Seating matches"
