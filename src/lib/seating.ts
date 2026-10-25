@@ -246,8 +246,8 @@ export const guests: Guest[] = [
     "table": 6
   },
   {
-    "firstName": "X",
-    "lastName": "",
+    "firstName": "Keilia",
+    "lastName": "De Boer",
     "table": 6
   },
   {
@@ -391,8 +391,8 @@ export const guests: Guest[] = [
     "table": 10
   },
   {
-    "firstName": "Josie",
-    "lastName": "Gonzales",
+    "firstName": "Glenda",
+    "lastName": "Gonzalez",
     "table": 10
   },
   {
