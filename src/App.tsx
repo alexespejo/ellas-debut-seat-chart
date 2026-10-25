@@ -22,6 +22,57 @@ function SearchIcon() {
  );
 }
 
+function LavenderSprig({ mirrored = false }: { mirrored?: boolean }) {
+ const buds = Array.from({ length: 20 }, (_, index) => {
+  const t = index / 19;
+  const side = index % 2 === 0 ? -1 : 1;
+
+  return {
+   x: 60 + side * (15 * (1 - t) + 1.5),
+   y: 128 - t * 108,
+   angle: side * 36 * (1 - t * 0.25),
+   scale: 1 - t * 0.32,
+  };
+ });
+
+ return (
+  <svg
+   className={`sprig ${mirrored ? "sprig-bottom" : "sprig-top"}`}
+   viewBox="0 0 120 280"
+   fill="none"
+   aria-hidden="true"
+  >
+   <path
+    d="M60 272c-5-50 3-98 0-146"
+    stroke="currentColor"
+    strokeWidth="1.2"
+    strokeLinecap="round"
+    opacity="0.45"
+   />
+   <path
+    d="M60 218c-14-5-23-15-27-28 13 3 21 12 27 28Z"
+    fill="currentColor"
+    opacity="0.22"
+   />
+   <path
+    d="M60 242c15-6 24-16 27-29-13 3-21 12-27 29Z"
+    fill="currentColor"
+    opacity="0.16"
+   />
+   {buds.map((bud, index) => (
+    <ellipse
+     key={`${bud.x}-${bud.y}`}
+     rx="4.2"
+     ry="7.4"
+     fill="currentColor"
+     opacity={0.5 + (index / 19) * 0.4}
+     transform={`translate(${bud.x.toFixed(2)} ${bud.y.toFixed(2)}) rotate(${bud.angle.toFixed(2)}) scale(${bud.scale.toFixed(3)})`}
+    />
+   ))}
+  </svg>
+ );
+}
+
 function App() {
  const [query, setQuery] = useState("");
  const results = useMemo(() => searchGuests(query), [query]);
@@ -36,9 +87,12 @@ function App() {
  return (
   <main className="page">
    <div className="panel">
+    <div className="panel-art" aria-hidden="true">
+     <LavenderSprig />
+     <LavenderSprig mirrored />
+    </div>
     <div className="panel-inner">
      <header className="masthead">
-      <p className="eyebrow">Seating chart</p>
       <h1>Ella Catherine&rsquo;s 18th Birthday Debut</h1>
       <p className="lede">
        Search your name and we&rsquo;ll show you which table you&rsquo;re seated
@@ -90,7 +144,7 @@ function App() {
 
      <section className="results" aria-live="polite" aria-atomic="true">
       {!hasSearch && trimmedQuery.length === 0 ? (
-       <p className="empty">Start typing a first or last name.</p>
+       <p className="empty"></p>
       ) : !hasSearch ? (
        <p className="empty">Type a name to search the seating chart.</p>
       ) : results.length === 0 ? (
